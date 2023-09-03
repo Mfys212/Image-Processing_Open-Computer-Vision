@@ -1,6 +1,6 @@
 import cv2
 
-filee = input("Masukkan Nama File: ")
+filee = input("Masukkan Nama File Citra: ")
 citra = cv2.imread(filee)
 if citra is None:
     print("Tidak dapat membaca citra", filee)
