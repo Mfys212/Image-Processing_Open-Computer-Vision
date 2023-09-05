@@ -12,13 +12,13 @@ else:
     else:
         warna = [0, 255, 0]
 tebal = 2
+# pojok kiri atas
 x = int(input("Koordinat x: "))
 y = int(input("Koordinat y: "))
+# pojok kanan bawah (x+lebar, y+tinggi)
 width = int(input("Lebar: "))
 height = int(input("Tinggi: "))
 citra = cv2.rectangle(citra, (x, y), (x+width, y+height), warna, tebal)
 cv2.imshow("Citra dengan bounding box", citra)
 cv2.waitKey()
 cv2.destroyAllWindows()
-
-
